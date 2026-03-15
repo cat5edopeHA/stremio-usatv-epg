@@ -1,5 +1,4 @@
 #!/usr/bin/env node
-// server.js - HTTP server entry point (per SDK guide structure)
 const { serveHTTP } = require('stremio-addon-sdk');
 const cron = require('node-cron');
 const channelMap = require('./channelMap');

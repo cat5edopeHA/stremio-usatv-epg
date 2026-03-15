@@ -1,5 +1,4 @@
 // addon.js - exports addonInterface (per SDK guide structure)
-// Docs: https://stremio.github.io/stremio-addon-guide/sdk-guide/step1
 const { addonBuilder } = require('stremio-addon-sdk');
 const manifest = require('./manifest');
 const { handleCatalog } = require('./catalogHandler');
