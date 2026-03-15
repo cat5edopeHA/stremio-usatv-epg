@@ -1,0 +1,16 @@
+services:
+  usatv-epg:
+    build: .
+    container_name: usatv-epg
+    restart: unless-stopped
+    ports:
+      - "7001:7001"
+    environment:
+      - PORT=7001
+      - EPG_URL=https://epg.pw/xmltv/epg_US.xml
+      - TZ=America/New_York
+      - NODE_OPTIONS=--max-old-space-size=3072
+    deploy:
+      resources:
+        limits:
+          memory: 4g
