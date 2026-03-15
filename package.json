@@ -1,0 +1,18 @@
+{
+  "name": "usatv-epg",
+  "version": "1.0.0",
+  "description": "EPG guide addon for USATV channels in Stremio",
+  "main": "src/addon.js",
+  "scripts": {
+    "start": "node src/server.js"
+  },
+  "dependencies": {
+    "fast-xml-parser": "^5.2.0",
+    "fuse.js": "^7.0.0",
+    "node-cron": "^3.0.3",
+    "stremio-addon-sdk": "^1.6.10"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
